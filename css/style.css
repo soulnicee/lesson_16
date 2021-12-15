@@ -118,14 +118,14 @@ body {
 
 .appointment__left {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 585px;
-          flex: 1 0 585px;
+      -ms-flex: 1 1 585px;
+          flex: 1 1 585px;
 }
 
 .appointment__right {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 324px;
-          flex: 1 0 324px;
+      -ms-flex: 1 1 324px;
+          flex: 1 1 324px;
 }
 
 .side-left {
@@ -396,10 +396,13 @@ body {
   cursor: pointer;
   min-height: 50px;
   padding: 5px 53px;
-  margin: 0px 23px 0px 0px;
+  margin: 0px 23px 10px 0px;
 }
 
 .customers-registered__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: #0156ff;
   font-size: 14px;
   line-height: 20px;
@@ -633,6 +636,9 @@ body {
   font-size: 32px;
   line-height: 48px;
   color: #000000;
+}
+
+.checkout__title:not(:last-child) {
   margin: 0px 30px 45px 0px;
 }
 
@@ -660,6 +666,10 @@ body {
   -webkit-transform: translate(0, -4px);
       -ms-transform: translate(0, -4px);
           transform: translate(0, -4px);
+}
+
+.checkout__link:not(:last-child) {
+  margin: 0px 30px 45px 0px;
 }
 
 .checkout__subtitle {

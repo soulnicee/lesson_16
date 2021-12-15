@@ -70,12 +70,12 @@ body {
 	}
 	// .appointment__left
 	&__left {
-		flex: 1 0 585px;
+		flex: 1 1 585px;
 		//max-width: 585px;
 	}
 	// .appointment__right
 	&__right {
-		flex: 1 0 324px;
+		flex: 1 1 324px;
 		//max-width: 324px;
 	}
 }
@@ -308,10 +308,11 @@ body {
 		cursor: pointer;
 		min-height: 50px;
 		padding: 5px 53px;
-		margin: 0px 23px 0px 0px;
+		margin: 0px 23px 10px 0px;
 	}
 	// .ustomers-registered__link
 	&__link {
+		display: inline-flex;
 		color: #0156ff;
 		font-size: 14px;
 		line-height: 20px;
@@ -547,7 +548,9 @@ body {
 		font-size: 32px;
 		line-height: 48px;
 		color: #000000;
-		margin: 0px 30px 45px 0px;
+		&:not(:last-child) {
+			margin: 0px 30px 45px 0px;
+		}
 	}
 	// .checkout__link
 	&__link {
@@ -566,6 +569,9 @@ body {
 		min-height: 50px;
 		padding: 0px 80px;
 		transform: translate(0, -4px);
+		&:not(:last-child) {
+			margin: 0px 30px 45px 0px;
+		}
 	}
 	// .checkout__subtitle
 	&__subtitle {
