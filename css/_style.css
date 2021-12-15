@@ -1,0 +1,549 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap&subset=cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext);
+/* &display=swap&subset=cyrillic-ext */
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	font-family: "Roboto", sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ------------------------------ */
+
+/* Шрифты */
+
+/* ======================================= */
+/* Ограничивающий контейнер */
+[class*="__container"] {
+	max-width: 1020px;
+	margin: 0px auto;
+}
+[class*="__skin"] {
+	max-width: 1400px;
+	margin: 0px auto;
+}
+/* ======================================= */
+
+/* ======================================= */
+.appointment {
+	width: 100%;
+	height: 980px;
+	background-image: url(../img/appointment/appointment-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.appointment__container {
+}
+.appointment__items {
+	display: flex;
+	padding: 130px 0 210px 0;
+}
+.item-appointment {
+	display: flex;
+	flex: 1 1 50%;
+}
+.item-appointment__body {
+	background: #5d62b5;
+	border-radius: 40px;
+	padding: 76px 57px;
+}
+.item-appointment__title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	color: #ffffff;
+}
+.item-appointment__title:not(:last-child) {
+	margin: 0 0 48px 0;
+}
+
+.item-appointment__form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 22px;
+}
+.form-appointment {
+}
+.form-appointment__item {
+	flex: 1 1 224px;
+}
+
+.item-appointment__textarea {
+	width: 470px;
+	height: 180px;
+}
+.item-appointment__button {
+	margin-left: 261px;
+}
+.item-appointment__butt {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 2;
+	text-align: center;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #ffffff;
+	border-radius: 8px;
+	background: #f2726f;
+	width: 210px;
+	height: 48px;
+}
+.form-appointment__name {
+}
+.form-decoration {
+	width: 224px;
+	height: 48px;
+	border: 2px solid rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	background: #5d62b5;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #ffffff;
+	padding: 0 0 0 24px;
+}
+.form-appointment__text {
+	border: 2px solid rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	background: #5d62b5;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #ffffff;
+	resize: none;
+	flex: 1 0 470px;
+	padding: 0 0 0 24px;
+}
+.form-appointment__email {
+}
+.form-appointment__tel {
+}
+.form-appointment__service {
+}
+.item-appointment__textarea {
+	display: flex;
+}
+
+.item-appointment__content {
+	margin-left: 111px;
+}
+.content-appointment {
+	max-width: 324px;
+	align-self: center;
+}
+.content-appointment__title {
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 1.2;
+	text-align: center;
+	color: #ffffff;
+}
+.content-appointment__count {
+	font-weight: 900;
+	font-size: 96px;
+	line-height: 0.58;
+	text-align: center;
+	color: #ffffff;
+}
+.content-appointment____text {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 1.37;
+	text-align: center;
+	color: #ffffff;
+}
+.content-appointment__title:not(:last-child) {
+	margin: 0 0 46px 0;
+}
+.content-appointment__count:not(:last-child) {
+	margin: 0 0 46px 0;
+}
+
+/* --------------------- */
+
+.summary {
+	background: #f5f7ff;
+	font-family: "Poppins", sans-serif;
+	padding: 18px 30px 29px;
+}
+.summary__content {
+}
+.summary__header {
+}
+.summary__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.5;
+	color: #000000;
+	padding: 0 0 19px 0;
+}
+.summary__text {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #000000;
+	padding: 0 0 13px 0;
+	max-width: 238px;
+}
+.summary__info {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #666666;
+	padding: 0 0 13px 0;
+	max-width: 287px;
+}
+.form-text-decor {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+	color: #000000;
+}
+.form-decor {
+	background: #ffffff;
+	border: 1px solid #a2a6b0;
+	border-radius: 4px;
+	width: 386px;
+	height: 38px;
+	padding: 0 0 0 17px;
+}
+
+.summary__form {
+}
+.form-summary {
+}
+.form-summary__main {
+}
+.form-summary__country {
+	margin: 0 0 5px 0;
+}
+.form-summary__count {
+}
+.form-summary__select {
+}
+.form-summary__state {
+	margin: 0 0 5px 0;
+}
+.form-summary__stat {
+}
+.form-summary__provin {
+}
+.form-summary__zip {
+	margin: 0 0 17px 0;
+}
+.form-summary__zi {
+}
+.form-summary__postal {
+}
+
+.form-summary__radio {
+	max-width: 386px;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #000000;
+	margin: 0 0 29px 0;
+}
+.radio-summary__button {
+}
+.radio-summary__rate {
+}
+.radio-summary__pickup {
+}
+.form-decor-radio {
+}
+.radio-summary__store {
+}
+
+.form-summary__discount {
+}
+
+.form-summary__code {
+	font-size: 18px;
+	line-height: 1.5px;
+	color: #000000;
+	background-color: #f5f7ff;
+	width: 386px;
+	text-transform: capitalize;
+	outline: none;
+	padding: 0 0 5px 0;
+}
+.form-summary__disc {
+	padding: 0 0 5px 0;
+}
+.form-summary__discontik {
+	margin: 0 0 19px 0;
+}
+.form-summary__button {
+}
+.form-summary__butto {
+	width: 386px;
+	height: 50px;
+	background: #f5f7ff;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: center;
+	color: #0156ff;
+	border: 2px solid #0156ff;
+	border-radius: 40px;
+}
+
+/* ============================== */
+
+.customer-login {
+	background-color: #ffffff;
+	font-family: "Poppins", sans-serif;
+}
+.customer__skin {
+}
+.customer-login__title {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 1.5;
+	color: #000000;
+	margin: 0 0 21px 0;
+}
+.customer-login__cards {
+	display: flex;
+	gap: 34px;
+	justify-content: center;
+}
+.customer-login__card {
+}
+.card-login {
+	background-color: #f5f7ff;
+	padding: 37px 57.5px 41px;
+	max-width: 564px;
+}
+.card-login__title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #000000;
+}
+.card-login__text {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 2.14;
+	color: #000000;
+}
+.card-login__form {
+}
+.login-form {
+}
+.login-form__email {
+	margin: 0 0 6px 0;
+}
+.login-form__title {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+	color: #000000;
+}
+.login-form__title::after {
+	content: "*";
+	color: red;
+	padding: 0 0 0 3px;
+}
+.login-form__mail {
+	background: #ffffff;
+	border: 1px solid #a2a6b0;
+	border-radius: 4px;
+	width: 449px;
+	height: 50px;
+	padding: 0 0 0 17px;
+}
+.login-form__password {
+	margin: 0 0 30px 0;
+}
+
+.login-form__pass {
+	background: #ffffff;
+	border: 1px solid #a2a6b0;
+	border-radius: 4px;
+	width: 449px;
+	height: 50px;
+	padding: 0 0 0 17px;
+}
+.login-form__button {
+	display: inline-block;
+	margin: 0 23px 0 0;
+}
+.login-form__signin {
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.5;
+	padding: 14px 50px;
+	background-color: #0156ff;
+	border-radius: 50px;
+}
+.login-form__forgot {
+	display: inline-block;
+}
+.login-form__restore {
+	font-size: 14px;
+	line-height: 1.43;
+	color: #0156ff;
+	text-transform: capitalize;
+}
+.card-login__list {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #000000;
+	margin: 0 0 36px 0;
+	width: 445px;
+	padding: 22px 0 0 0;
+}
+.card-login__list-item {
+}
+.card-login__list-item::before {
+	content: "•";
+	padding: 0 3px 0 0;
+}
+.card-login__create {
+	margin: 0 0 78px 0;
+}
+.card-login__account {
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.5;
+	padding: 14px 50px;
+	background-color: #0156ff;
+	border-radius: 50px;
+}
+.card-login__title-padding {
+	padding: 0 0 22px 0;
+}
+/* ================================= */
+
+.checkout {
+	font-family: "Poppins", sans-serif;
+}
+.checkout__skin {
+}
+.checkout__subtitle {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #000000;
+	padding: 0 0 14px 0;
+}
+
+.checkout__info {
+	border-top: 1px solid #cacdd8;
+	padding: 25px 0 0 0;
+}
+.checkout__form {
+	max-width: 565px;
+}
+.form-checkout {
+}
+.form-checkout__body {
+	margin: 0 0 12px 0;
+}
+.form-checkout__title {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+	color: #000000;
+}
+.form-checkout__title-required {
+}
+.form-checkout__title-required::after {
+	content: "*";
+	padding: 0 0 0 1px;
+	color: red;
+}
+.form-checkout__input {
+	background: #ffffff;
+	border: 1px solid #a2a6b0;
+	border-radius: 4px;
+	width: 100%;
+	height: 50px;
+}
+.form-checkout__input:not(:last-child) {
+	margin: 0 0 11px 0;
+	display: block;
+}
+.form-checkout__text {
+	font-size: 13px;
+	line-height: 2.1;
+	color: #666666;
+}
+.form-checkout__state {
+	background: #ffffff;
+	border: 1px solid #a2a6b0;
+	border-radius: 4px;
+	width: 100%;
+	height: 50px;
+	padding: 0 17px 0;
+}
+.form-checkout__items {
+	padding: 0 0 12px 0;
+}
+.form-checkout__item {
+}
+.form-checkout__item:not(:last-child) {
+	margin: 0 0 12px 0;
+}
+.form-checkout__radio {
+}
+.form-checkout__button {
+	margin: 0 0 50px 0;
+}
+.form-checkout__next {
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.5;
+	padding: 14.5px 70px;
+	background-color: #0156ff;
+	border-radius: 50px;
+	cursor: pointer;
+}
